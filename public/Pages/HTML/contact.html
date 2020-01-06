@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/383a9f8099.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/contact.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/modal.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/gif" href="../../Assets/Images/favicon.ico" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <!-- Section 1 - Navigation bar-->
+    <header>
+      <a href="../../index.html"><i class="fab fa-cuttlefish fa-3x"></i></a>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <div class="dropdown">
+              <a class="header-link" href="./instrumente.html"
+                ><i class="fas fa-guitar fa-lg"></i>INSTRUMENTS
+                <i class="fas fa-chevron-down"></i
+              ></a>
+              <div class="instruments-dropdown-content">
+                <a href="./chitari.html">Guitars</a>
+                <a href="./bassuri.html">Basses</a>
+                <a href="./tobe.html">Drums</a>
+                <a href="./pa.html">PA Equipment</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a class="header-link" href="./albume.html"
+              ><i class="fas fa-compact-disc fa-lg"></i>ALBUMS</a
+            >
+          </li>
+          <li>
+            <a class="header-link active" href="./contact.html"
+              ><i class="fas fa-id-card-alt fa-lg"></i>CONTACT</a
+            >
+          </li>
+          <li>
+            <a class="header-link" href="./ajutor.html"
+              ><i class="fas fa-question-circle fa-lg"></i>HELP</a
+            >
+          </li>
+          <li>
+            <button id="login-button">Login</button>
+          </li>
+          <li>
+            <button id="register-button">Register</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Section 2- Main body-->
+    <main>
+      <h2>
+        Contact us with your personal data so you can be added into our customer
+        database!
+      </h2>
+      <form>
+        <div class="form-item">
+          <label for="name">Your name</label><br />
+          <input type="text" name="name" id="name" placeholder="Name..." />
+        </div>
+        <div class="form-item">
+          <label for="email">Your email</label><br />
+          <input type="email" name="email" id="email" placeholder="Email..." />
+        </div>
+        <div class="form-item">
+          <label for="male" id="label-to-move">You are a...</label><br />
+          <input type="radio" name="gender" id="male" value="male" checked />
+          <label for="male">Male</label><br />
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female">Female</label><br />
+          <input type="radio" name="gender" id="other" value="other" />
+          <label for="other">Other</label>
+        </div>
+        <div class="form-item">
+          <label for="instrument">What is your favourite instrument?</label
+          ><br />
+          <select name="instrument" id="instrument">
+            <option value="Guitar">Guitar</option>
+            <option value="Bass">Bass</option>
+            <option value="Drums">Drums</option>
+            <option value="Ukulele">Ukulele</option>
+          </select>
+        </div>
+        <div class="form-item">
+          <label for="message">Your message for us</label><br />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Your message..."
+          ></textarea>
+        </div>
+        <input class="submit" type="submit" value="Submit" />
+      </form>
+    </main>
+    <!--Section 3 - Footer -->
+    <footer>
+      <h4>Find us on social media:</h4>
+      <a href="https://www.facebook.com/"
+        ><i class="fab fa-facebook-square fa-lg"></i
+      ></a>
+      <a href="https://twitter.com/"
+        ><i class="fab fa-twitter-square fa-lg"></i
+      ></a>
+    </footer>
+    <!--Section 4 - Login Modal-->
+    <div class="modal" id="login-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h1>Login</h1>
+        </div>
+        <div class="modal-body">
+          <div class="form-group"></div>
+          <div class="form-group"></div>
+        </div>
+        <div class="modal-footer">
+          <button id="login-button2">Submit</button>
+          <h3>
+            Don't have an account? <span id="register-text">Register</span> now
+          </h3>
+        </div>
+      </div>
+    </div>
+    <!--Section 5 - Register Modal-->
+    <div class="modal1" id="register-modal">
+      <div class="modal-content1">
+        <div class="modal-header1">
+          <span class="close1">&times;</span>
+          <h1>Register</h1>
+        </div>
+        <div class="modal-body1">
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+        </div>
+        <div class="modal-footer1">
+          <button id="register-button2">Submit</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../JS/checkIfLogged.js"></script>
+    <script type="text/javascript" src="../JS/loginModal.js"></script>
+    <script type="text/javascript" src="../JS/registerModal.js"></script>
+    <script type="text/javascript" src="../JS/changeColor.js"></script>
+  </body>
+</html>
