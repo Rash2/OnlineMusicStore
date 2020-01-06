@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/383a9f8099.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/pa.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/modal.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>PA Equipment</title>
+    <link rel="icon" type="image/gif" href="../../Assets/Images/favicon.ico" />
+  </head>
+  <body>
+    <!-- Section 1 - Navigation bar-->
+    <header>
+      <a href="../../index.html"><i class="fab fa-cuttlefish fa-3x"></i></a>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <div class="dropdown">
+              <a class="header-link active" href="./instrumente.html"
+                ><i class="fas fa-guitar fa-lg"></i>INSTRUMENTS
+                <i class="fas fa-chevron-down"></i
+              ></a>
+              <div class="instruments-dropdown-content">
+                <a href="./chitari.html">Guitars</a>
+                <a href="./bassuri.html">Basses</a>
+                <a href="./tobe.html">Drums</a>
+                <a href="./pa.html">PA Equipment</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a class="header-link" href="./albume.html"
+              ><i class="fas fa-compact-disc fa-lg"></i>ALBUMS</a
+            >
+          </li>
+          <li>
+            <a class="header-link" href="./contact.html"
+              ><i class="fas fa-id-card-alt fa-lg"></i>CONTACT</a
+            >
+          </li>
+          <li>
+            <a class="header-link" href="./ajutor.html"
+              ><i class="fas fa-question-circle fa-lg"></i>HELP</a
+            >
+          </li>
+          <li>
+            <button id="login-button">Login</button>
+          </li>
+          <li>
+            <button id="register-button">Register</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Section 2 - Main body -->
+    <main>
+      <div class="page-banner">
+        <h1>PA Equipment</h1>
+      </div>
+      <ul class="pa-list">
+        <li>
+          <img
+            src="../../Assets/Images/the-box.jpg"
+            alt="Imaginea nu se poate incarca"
+          />
+          <div class="product-info">
+            <details>
+              <summary>the box TA Power Bundle</summary>
+              <p><strong>Manufacturer: </strong>the box</p>
+              <p><strong>ABS-Plastic Housing: </strong>No</p>
+              <p><strong>Satellite Speaker System: </strong>Yes</p>
+              <p><strong>Incl. Mixer: </strong>No</p>
+              <p><strong>Incl. Stand: </strong>No</p>
+              <p><strong>Tweeter, 1" and Larger: </strong>Yes</p>
+              <p><strong>Midrange Driver: </strong>1x 12"</p>
+              <p><strong>Woofer size: </strong>1x 18"</p>
+            </details>
+            <a href="https://www.thomann.de/gb/the_box.html"
+              >Visit the manufacturer's website</a
+            >
+          </div>
+        </li>
+        <li>
+          <img
+            src="../../Assets/Images/ev.jpg"
+            alt="Imaginea nu se poate incarca"
+          />
+          <div class="product-info">
+            <details>
+              <summary>EV ELX Bundle</summary>
+              <p><strong>Manufacturer: </strong>Electro-Voice</p>
+              <p><strong>ABS-Plastic Housing: </strong>No</p>
+              <p><strong>Satellite Speaker System: </strong>Yes</p>
+              <p><strong>Incl. Mixer: </strong>No</p>
+              <p><strong>Incl. Stand: </strong>Yes</p>
+              <p><strong>Tweeter, 1" and Larger: </strong>Yes</p>
+              <p><strong>Midrange Driver: </strong>1x 12"</p>
+              <p><strong>Woofer size: </strong>1x 18"</p>
+            </details>
+            <a href="https://www.electrovoice.com/"
+              >Visit the manufacturer's website</a
+            >
+          </div>
+        </li>
+        <li>
+          <img
+            src="../../Assets/Images/hk.jpg"
+            alt="Imaginea nu se poate incarca"
+          />
+          <div class="product-info">
+            <details>
+              <summary>HK Audio PR:O 18/PR:O 15 D Bundle</summary>
+              <p><strong>Manufacturer: </strong>HK Audio</p>
+              <p><strong>ABS-Plastic Housing: </strong>No</p>
+              <p><strong>Satellite Speaker System: </strong>Yes</p>
+              <p><strong>Incl. Mixer: </strong>No</p>
+              <p><strong>Incl. Stand: </strong>Yes</p>
+              <p><strong>Tweeter, 1" and Larger: </strong>Yes</p>
+              <p><strong>Midrange Driver: </strong>1x 15"</p>
+              <p><strong>Woofer size: </strong>1x 18"</p>
+            </details>
+            <a href="https://hkaudio.com/">Visit the manufacturer's website</a>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <!--Section 3 - Footer -->
+    <footer>
+      <h4>Find us on social media:</h4>
+      <a href="https://www.facebook.com/"
+        ><i class="fab fa-facebook-square fa-lg"></i
+      ></a>
+      <a href="https://twitter.com/"
+        ><i class="fab fa-twitter-square fa-lg"></i
+      ></a>
+    </footer>
+    <!--Section 4 - Login Modal-->
+    <div class="modal" id="login-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h1>Login</h1>
+        </div>
+        <div class="modal-body">
+          <div class="form-group"></div>
+          <div class="form-group"></div>
+        </div>
+        <div class="modal-footer">
+          <button id="login-button2">Submit</button>
+          <h3>
+            Don't have an account? <span id="register-text">Register</span> now
+          </h3>
+        </div>
+      </div>
+    </div>
+    <!--Section 5 - Register Modal-->
+    <div class="modal1" id="register-modal">
+      <div class="modal-content1">
+        <div class="modal-header1">
+          <span class="close1">&times;</span>
+          <h1>Register</h1>
+        </div>
+        <div class="modal-body1">
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+        </div>
+        <div class="modal-footer1">
+          <button id="register-button2">Submit</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../JS/checkIfLogged.js"></script>
+    <script type="text/javascript" src="../JS/loginModal.js"></script>
+    <script type="text/javascript" src="../JS/registerModal.js"></script>
+    <script type="text/javascript" src="../JS/changeColor.js"></script>
+  </body>
+</html>

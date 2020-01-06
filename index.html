@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/383a9f8099.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./Pages/CSS/welcome.css" />
+    <link rel="stylesheet" type="text/css" href="./Pages/CSS/modal.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/gif" href="./Assets/Images/favicon.ico" />
+    <title>Welcome</title>
+  </head>
+  <body>
+    <!-- Section 1 - Navigation bar-->
+    <header>
+      <a href="./index.html"><i class="fab fa-cuttlefish fa-3x"></i></a>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <div class="dropdown">
+              <a class="header-link" href="./Pages/HTML/instrumente.html"
+                ><i class="fas fa-guitar fa-lg"></i>INSTRUMENTS
+                <i class="fas fa-chevron-down"></i
+              ></a>
+              <div class="instruments-dropdown-content">
+                <a href="./Pages/HTML/chitari.html">Guitars</a>
+                <a href="./Pages/HTML/bassuri.html">Basses</a>
+                <a href="./Pages/HTML/tobe.html">Drums</a>
+                <a href="./Pages/HTML/pa.html">PA Equipment</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a class="header-link" href="./Pages/HTML/albume.html"
+              ><i class="fas fa-compact-disc fa-lg"></i>ALBUMS</a
+            >
+          </li>
+          <li>
+            <a class="header-link" href="./Pages/HTML/contact.html"
+              ><i class="fas fa-id-card-alt fa-lg"></i>CONTACT</a
+            >
+          </li>
+          <li>
+            <a class="header-link" href="./Pages/HTML/ajutor.html"
+              ><i class="fas fa-question-circle fa-lg"></i>HELP</a
+            >
+          </li>
+          <li>
+            <button id="login-button">Login</button>
+          </li>
+          <li>
+            <button id="register-button">Register</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Section 2 - Main Body-->
+    <main>
+      <h2>Welcome to Codrut Store!</h2>
+      <div class="slider-wrapper">
+        We love
+        <div class="slider">
+          <div class="slider-text1">GUITARS</div>
+          <div class="slider-text2">BASSES</div>
+          <div class="slider-text3">DRUMS</div>
+        </div>
+      </div>
+      <h3>
+        Press one of the images below to go to the page.
+      </h3>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <span title="Instruments">
+            <a href="./Pages/HTML/instrumente.html">
+              <img src="./Assets/Images/jackson_headstock.jpeg" alt="1" /> </a
+          ></span>
+        </div>
+
+        <div class="mySlides fade">
+          <span title="Albums"
+            ><a href="./Pages/HTML/albume.html">
+              <img src="./Assets/Images/megadeth_rust.jpg" alt="2" /> </a
+          ></span>
+        </div>
+
+        <div class="mySlides fade">
+          <span title="Instruments"
+            ><a href="./Pages/HTML/instrumente.html">
+              <img src="./Assets/Images/drums_wallpaper.jpg" alt="3" /> </a
+          ></span>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </main>
+    <!--Section 3 - Footer -->
+    <footer>
+      <h4>Find us on social media:</h4>
+      <a href="https://www.facebook.com/"
+        ><i class="fab fa-facebook-square fa-lg"></i
+      ></a>
+      <a href="https://twitter.com/"
+        ><i class="fab fa-twitter-square fa-lg"></i
+      ></a>
+    </footer>
+    <!--Section 4 - Login Modal-->
+    <div class="modal" id="login-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h1>Login</h1>
+        </div>
+        <div class="modal-body">
+          <div class="form-group"></div>
+          <div class="form-group"></div>
+        </div>
+        <div class="modal-footer">
+          <button id="login-button2">Submit</button>
+          <h3>
+            Don't have an account? <span id="register-text">Register</span> now
+          </h3>
+        </div>
+      </div>
+    </div>
+    <!--Section 5 - Register Modal-->
+    <div class="modal1" id="register-modal">
+      <div class="modal-content1">
+        <div class="modal-header1">
+          <span class="close1">&times;</span>
+          <h1>Register</h1>
+        </div>
+        <div class="modal-body1">
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+        </div>
+        <div class="modal-footer1">
+          <button id="register-button2">Submit</button>
+        </div>
+      </div>
+    </div>
+    <script src="./Pages/JS/welcome-carousel.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./Pages/JS/checkIfLogged.js"></script>
+    <script type="text/javascript" src="./Pages/JS/loginModal.js"></script>
+    <script type="text/javascript" src="./Pages/JS/registerModal.js"></script>
+    <script type="text/javascript" src="./Pages/JS/changeColor.js"></script>
+  </body>
+</html>

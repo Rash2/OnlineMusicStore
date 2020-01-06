@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/383a9f8099.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/ajutor.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/modal.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/gif" href="../../Assets/Images/favicon.ico" />
+    <title>Help</title>
+  </head>
+  <body>
+    <!-- Section 1 - Navigation bar-->
+    <header>
+      <a href="../../index.html"><i class="fab fa-cuttlefish fa-3x"></i></a>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <div class="dropdown">
+              <a class="header-link" href="./instrumente.html"
+                ><i class="fas fa-guitar fa-lg"></i>INSTRUMENTS
+                <i class="fas fa-chevron-down"></i
+              ></a>
+              <div class="instruments-dropdown-content">
+                <a href="./chitari.html">Guitars</a>
+                <a href="./bassuri.html">Basses</a>
+                <a href="./tobe.html">Drums</a>
+                <a href="./pa.html">PA Equipment</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a class="header-link" href="./albume.html"
+              ><i class="fas fa-compact-disc fa-lg"></i>ALBUMS</a
+            >
+          </li>
+          <li>
+            <a class="header-link" href="./contact.html"
+              ><i class="fas fa-id-card-alt fa-lg"></i>CONTACT</a
+            >
+          </li>
+          <li>
+            <a class="header-link active" href="./ajutor.html"
+              ><i class="fas fa-question-circle fa-lg"></i>HELP</a
+            >
+          </li>
+          <li>
+            <button id="login-button">Login</button>
+          </li>
+          <li>
+            <button id="register-button">Register</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Section 2 - Main body -->
+    <main>
+      <h2>Who are we?</h2>
+      <h5>
+        We are CodrutStore™, a project started from our passion for music and
+        all that music means.
+      </h5>
+      <h5>
+        In our store you will find everything suited for your eagerness to
+        create and inspire, from state-of-the-art musical instruments to albums
+        which will put you on the right track when it comes to creating.
+      </h5>
+      <h2>Where can you find us?</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5697.081548092552!2d26.05738167705651!3d44.44258141640831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b201e891108a11%3A0xaa76c748b7b2b500!2zR3JvesSDdmXImXRpLCBCdWNoYXJlc3Q!5e0!3m2!1sen!2sro!4v1572968926184!5m2!1sen!2sro"
+        allowfullscreen=""
+      ></iframe>
+      <h2>What is our favourite animal? Click below to find out!</h2>
+      <audio controls>
+        <source src="../../Assets/Audio/57.mp3" type="audio/mpeg" />
+        It's a horse!
+      </audio>
+    </main>
+    <!--Section 3 - Footer -->
+    <footer>
+      <h4>Find us on social media:</h4>
+      <a href="#"><i class="fab fa-facebook-square fa-lg"></i></a>
+      <a href="#"><i class="fab fa-twitter-square fa-lg"></i></a>
+    </footer>
+    <!--Section 4 - Login Modal-->
+    <div class="modal" id="login-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h1>Login</h1>
+        </div>
+        <div class="modal-body">
+          <div class="form-group"></div>
+          <div class="form-group"></div>
+        </div>
+        <div class="modal-footer">
+          <button id="login-button2">Submit</button>
+          <h3>
+            Don't have an account? <span id="register-text">Register</span> now
+          </h3>
+        </div>
+      </div>
+    </div>
+    <!--Section 5 - Register Modal-->
+    <div class="modal1" id="register-modal">
+      <div class="modal-content1">
+        <div class="modal-header1">
+          <span class="close1">&times;</span>
+          <h1>Register</h1>
+        </div>
+        <div class="modal-body1">
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+          <div class="form-group1"></div>
+        </div>
+        <div class="modal-footer1">
+          <button id="register-button2">Submit</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../JS/checkIfLogged.js"></script>
+    <script type="text/javascript" src="../JS/loginModal.js"></script>
+    <script type="text/javascript" src="../JS/registerModal.js"></script>
+    <script type="text/javascript" src="../JS/changeColor.js"></script>
+  </body>
+</html>
